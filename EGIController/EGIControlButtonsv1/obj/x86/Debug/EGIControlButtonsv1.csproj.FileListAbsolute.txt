@@ -1,0 +1,13 @@
+c:\users\trader\documents\visual studio 2010\Projects\EGIControlButtonsv1\EGIControlButtonsv1\bin\Debug\EGIControlButtonsv1.exe.config
+c:\users\trader\documents\visual studio 2010\Projects\EGIControlButtonsv1\EGIControlButtonsv1\bin\Debug\EGIControlButtonsv1.exe
+c:\users\trader\documents\visual studio 2010\Projects\EGIControlButtonsv1\EGIControlButtonsv1\bin\Debug\EGIControlButtonsv1.pdb
+c:\users\trader\documents\visual studio 2010\Projects\EGIControlButtonsv1\EGIControlButtonsv1\obj\x86\Debug\EGIControlButtonsv1.Form1.resources
+c:\users\trader\documents\visual studio 2010\Projects\EGIControlButtonsv1\EGIControlButtonsv1\obj\x86\Debug\EGIControlButtonsv1.Properties.Resources.resources
+c:\users\trader\documents\visual studio 2010\Projects\EGIControlButtonsv1\EGIControlButtonsv1\obj\x86\Debug\EGIControlButtonsv1.csproj.GenerateResource.Cache
+c:\users\trader\documents\visual studio 2010\Projects\EGIControlButtonsv1\EGIControlButtonsv1\obj\x86\Debug\EGIControlButtonsv1.exe
+c:\users\trader\documents\visual studio 2010\Projects\EGIControlButtonsv1\EGIControlButtonsv1\obj\x86\Debug\EGIControlButtonsv1.pdb
+C:\Users\Trader\Documents\Visual Studio 2010\Projects\EGIControlButtonsv1\EGIControlButtonsv1\obj\x86\Debug\EGIControlButtonsv1.csprojResolveAssemblyReference.cache
+C:\Users\Trader\Documents\Visual Studio 2010\Projects\EGIControlButtonsv1\EGIControlButtonsv1\bin\Debug\EGIControlButtonsv1.exe.manifest
+C:\Users\Trader\Documents\Visual Studio 2010\Projects\EGIControlButtonsv1\EGIControlButtonsv1\bin\Debug\EGIControlButtonsv1.application
+C:\Users\Trader\Documents\Visual Studio 2010\Projects\EGIControlButtonsv1\EGIControlButtonsv1\obj\x86\Debug\EGIControlButtonsv1.exe.manifest
+C:\Users\Trader\Documents\Visual Studio 2010\Projects\EGIControlButtonsv1\EGIControlButtonsv1\obj\x86\Debug\EGIControlButtonsv1.application
