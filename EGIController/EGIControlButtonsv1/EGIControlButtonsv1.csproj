@@ -154,8 +154,12 @@
     <Content Include="E-Icon2.ico" />
     <Content Include="Graphics\GreenLight.gif" />
     <Content Include="Graphics\GreenLight.png" />
+    <Content Include="Graphics\Penguinshoveling.gif" />
+    <Content Include="Graphics\PenguinTracking.png" />
     <Content Include="Graphics\RedLight.gif" />
     <Content Include="Graphics\RedLight.png" />
+    <Content Include="Graphics\Spin3DTarget.gif" />
+    <Content Include="Graphics\SpinWait.gif" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">

@@ -11,3 +11,16 @@ C:\Users\Trader\Documents\Visual Studio 2010\Projects\EGIControlButtonsv1\EGICon
 C:\Users\Trader\Documents\Visual Studio 2010\Projects\EGIControlButtonsv1\EGIControlButtonsv1\bin\Debug\EGIControlButtonsv1.application
 C:\Users\Trader\Documents\Visual Studio 2010\Projects\EGIControlButtonsv1\EGIControlButtonsv1\obj\x86\Debug\EGIControlButtonsv1.exe.manifest
 C:\Users\Trader\Documents\Visual Studio 2010\Projects\EGIControlButtonsv1\EGIControlButtonsv1\obj\x86\Debug\EGIControlButtonsv1.application
+C:\Users\Trader\Documents\GitHub\EGIController\EGIController\EGIController\EGIControlButtonsv1\bin\Debug\EGIControlButtonsv1.exe.config
+C:\Users\Trader\Documents\GitHub\EGIController\EGIController\EGIController\EGIControlButtonsv1\obj\x86\Debug\EGIControlButtonsv1.exe
+C:\Users\Trader\Documents\GitHub\EGIController\EGIController\EGIController\EGIControlButtonsv1\obj\x86\Debug\EGIControlButtonsv1.pdb
+C:\Users\Trader\Documents\GitHub\EGIController\EGIController\EGIController\EGIControlButtonsv1\bin\Debug\EGIControlButtonsv1.exe.manifest
+C:\Users\Trader\Documents\GitHub\EGIController\EGIController\EGIController\EGIControlButtonsv1\bin\Debug\EGIControlButtonsv1.application
+C:\Users\Trader\Documents\GitHub\EGIController\EGIController\EGIController\EGIControlButtonsv1\bin\Debug\EGIControlButtonsv1.exe
+C:\Users\Trader\Documents\GitHub\EGIController\EGIController\EGIController\EGIControlButtonsv1\bin\Debug\EGIControlButtonsv1.pdb
+C:\Users\Trader\Documents\GitHub\EGIController\EGIController\EGIController\EGIControlButtonsv1\obj\x86\Debug\EGIControlButtonsv1.csprojResolveAssemblyReference.cache
+C:\Users\Trader\Documents\GitHub\EGIController\EGIController\EGIController\EGIControlButtonsv1\obj\x86\Debug\EGIControlButtonsv1.Form1.resources
+C:\Users\Trader\Documents\GitHub\EGIController\EGIController\EGIController\EGIControlButtonsv1\obj\x86\Debug\EGIControlButtonsv1.Properties.Resources.resources
+C:\Users\Trader\Documents\GitHub\EGIController\EGIController\EGIController\EGIControlButtonsv1\obj\x86\Debug\EGIControlButtonsv1.csproj.GenerateResource.Cache
+C:\Users\Trader\Documents\GitHub\EGIController\EGIController\EGIController\EGIControlButtonsv1\obj\x86\Debug\EGIControlButtonsv1.exe.manifest
+C:\Users\Trader\Documents\GitHub\EGIController\EGIController\EGIController\EGIControlButtonsv1\obj\x86\Debug\EGIControlButtonsv1.application

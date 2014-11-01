@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EGIControlButtonsv1.exe" size="526336">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EGIControlButtonsv1.exe" size="1571840">
       <assemblyIdentity name="EGIControlButtonsv1" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Fp39idBPcVA3sSMiR1TFmm+jT20=</dsig:DigestValue>
+        <dsig:DigestValue>1b4f3br/G8y37Kz3Ett+Z4vAkVY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -99,6 +99,24 @@
       <dsig:DigestValue>kfEmu2M8yuR1QFSMiHU0z3BE/ng=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Graphics\Penguinshoveling.gif" size="365072">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>klnDJrW4LP8/2d5Oc6dvxYamPQA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Graphics\PenguinTracking.png" size="262574">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>pBlPYvUrIF4oqtMKoxrd8X4cdgk=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Graphics\RedLight.gif" size="14860">
     <hash>
       <dsig:Transforms>
@@ -115,6 +133,24 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>P/Sjh4FY9qVBVzrOYXP3Vq47cwo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Graphics\Spin3DTarget.gif" size="622588">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>FF0vZfMMMuq23gsKANmZeE+L/ss=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Graphics\SpinWait.gif" size="74055">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>LqIQYGDA/Rwu306EXPMDhJfM81M=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

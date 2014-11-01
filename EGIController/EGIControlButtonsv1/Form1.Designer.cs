@@ -30,13 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.strategyParametersPerformanceBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.strategyParametersPerformanceBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.eFundDataSet = new EGIControlButtonsv1.EFundDataSet();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -49,8 +51,6 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.strategyParametersPerformanceBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.strategyParametersPerformanceDataGridView = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,8 +68,8 @@
             this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn40 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.strategyParametersPerformanceBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.eFundDataSet = new EGIControlButtonsv1.EFundDataSet();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.strategyParametersPerformanceTableAdapter = new EGIControlButtonsv1.EFundDataSetTableAdapters.StrategyParametersPerformanceTableAdapter();
             this.tableAdapterManager = new EGIControlButtonsv1.EFundDataSetTableAdapters.TableAdapterManager();
             this.eFundDataSet1 = new EGIControlButtonsv1.EFundDataSet();
@@ -78,15 +78,23 @@
             this.button3 = new System.Windows.Forms.Button();
             this.RedlightBox = new System.Windows.Forms.PictureBox();
             this.GreenlightBox = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.penguinBox = new System.Windows.Forms.PictureBox();
+            this.workingOnItLabel = new System.Windows.Forms.Label();
+            this.spinnerBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.strategyParametersPerformanceBindingNavigator)).BeginInit();
             this.strategyParametersPerformanceBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.strategyParametersPerformanceDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.strategyParametersPerformanceBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eFundDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.strategyParametersPerformanceDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eFundDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RedlightBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GreenlightBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.penguinBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spinnerBox)).BeginInit();
             this.SuspendLayout();
             // 
             // strategyParametersPerformanceBindingNavigator
@@ -127,6 +135,16 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // strategyParametersPerformanceBindingSource
+            // 
+            this.strategyParametersPerformanceBindingSource.DataMember = "StrategyParametersPerformance";
+            this.strategyParametersPerformanceBindingSource.DataSource = this.eFundDataSet;
+            // 
+            // eFundDataSet
+            // 
+            this.eFundDataSet.DataSetName = "EFundDataSet";
+            this.eFundDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigatorCountItem
             // 
@@ -242,35 +260,6 @@
             this.strategyParametersPerformanceDataGridView.Size = new System.Drawing.Size(1057, 299);
             this.strategyParametersPerformanceDataGridView.TabIndex = 1;
             // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(954, 405);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 24);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "EGI Controller";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(24, 49);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 40);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Reduce MAE By $50";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Instrument";
@@ -286,11 +275,11 @@
             // dataGridViewTextBoxColumn38
             // 
             this.dataGridViewTextBoxColumn38.DataPropertyName = "Average MAE";
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle16.Format = "C2";
-            dataGridViewCellStyle16.NullValue = null;
-            this.dataGridViewTextBoxColumn38.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle6.Format = "C2";
+            dataGridViewCellStyle6.NullValue = null;
+            this.dataGridViewTextBoxColumn38.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewTextBoxColumn38.HeaderText = "Average MAE";
             this.dataGridViewTextBoxColumn38.Name = "dataGridViewTextBoxColumn38";
             // 
@@ -303,32 +292,32 @@
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.DataPropertyName = "StopLongTicks";
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Red;
-            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Red;
+            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridViewTextBoxColumn8.HeaderText = "StopLongTicks";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
             // dataGridViewTextBoxColumn9
             // 
             this.dataGridViewTextBoxColumn9.DataPropertyName = "StopShortTicks";
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Red;
-            this.dataGridViewTextBoxColumn9.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Red;
+            this.dataGridViewTextBoxColumn9.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridViewTextBoxColumn9.HeaderText = "StopShortTicks";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
             // dataGridViewTextBoxColumn10
             // 
             this.dataGridViewTextBoxColumn10.DataPropertyName = "TargetLongTicks";
-            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Green;
-            this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Green;
+            this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridViewTextBoxColumn10.HeaderText = "TargetLongTicks";
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
             // 
             // dataGridViewTextBoxColumn11
             // 
             this.dataGridViewTextBoxColumn11.DataPropertyName = "TargetShortTicks";
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Green;
-            this.dataGridViewTextBoxColumn11.DefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Green;
+            this.dataGridViewTextBoxColumn11.DefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridViewTextBoxColumn11.HeaderText = "TargetShortTicks";
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
             // 
@@ -386,15 +375,34 @@
             this.dataGridViewTextBoxColumn40.HeaderText = "Average ETD";
             this.dataGridViewTextBoxColumn40.Name = "dataGridViewTextBoxColumn40";
             // 
-            // strategyParametersPerformanceBindingSource
+            // label1
             // 
-            this.strategyParametersPerformanceBindingSource.DataMember = "StrategyParametersPerformance";
-            this.strategyParametersPerformanceBindingSource.DataSource = this.eFundDataSet;
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(954, 405);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(127, 24);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "EGI Controller";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // eFundDataSet
+            // button1
             // 
-            this.eFundDataSet.DataSetName = "EFundDataSet";
-            this.eFundDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(24, 49);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(129, 40);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Reduce MAE By $50";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // strategyParametersPerformanceTableAdapter
             // 
@@ -463,11 +471,63 @@
             this.GreenlightBox.TabStop = false;
             this.GreenlightBox.Visible = false;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(866, 400);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(82, 34);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
+            // 
+            // penguinBox
+            // 
+            this.penguinBox.Image = ((System.Drawing.Image)(resources.GetObject("penguinBox.Image")));
+            this.penguinBox.Location = new System.Drawing.Point(761, 95);
+            this.penguinBox.Name = "penguinBox";
+            this.penguinBox.Size = new System.Drawing.Size(320, 275);
+            this.penguinBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.penguinBox.TabIndex = 11;
+            this.penguinBox.TabStop = false;
+            this.penguinBox.Visible = false;
+            // 
+            // workingOnItLabel
+            // 
+            this.workingOnItLabel.AutoSize = true;
+            this.workingOnItLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.workingOnItLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.workingOnItLabel.Location = new System.Drawing.Point(466, 149);
+            this.workingOnItLabel.Name = "workingOnItLabel";
+            this.workingOnItLabel.Size = new System.Drawing.Size(216, 24);
+            this.workingOnItLabel.TabIndex = 12;
+            this.workingOnItLabel.Text = "Working on it... hold tight";
+            this.workingOnItLabel.Visible = false;
+            // 
+            // spinnerBox
+            // 
+            this.spinnerBox.Image = ((System.Drawing.Image)(resources.GetObject("spinnerBox.Image")));
+            this.spinnerBox.Location = new System.Drawing.Point(523, 176);
+            this.spinnerBox.Name = "spinnerBox";
+            this.spinnerBox.Size = new System.Drawing.Size(100, 94);
+            this.spinnerBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.spinnerBox.TabIndex = 13;
+            this.spinnerBox.TabStop = false;
+            this.spinnerBox.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1093, 438);
+            this.Controls.Add(this.spinnerBox);
+            this.Controls.Add(this.workingOnItLabel);
+            this.Controls.Add(this.penguinBox);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.GreenlightBox);
             this.Controls.Add(this.RedlightBox);
             this.Controls.Add(this.button3);
@@ -483,13 +543,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.strategyParametersPerformanceBindingNavigator)).EndInit();
             this.strategyParametersPerformanceBindingNavigator.ResumeLayout(false);
             this.strategyParametersPerformanceBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.strategyParametersPerformanceDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.strategyParametersPerformanceBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eFundDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.strategyParametersPerformanceDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eFundDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RedlightBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GreenlightBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.penguinBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spinnerBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -540,6 +603,11 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox RedlightBox;
         private System.Windows.Forms.PictureBox GreenlightBox;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox penguinBox;
+        private System.Windows.Forms.Label workingOnItLabel;
+        private System.Windows.Forms.PictureBox spinnerBox;
 
     }
 }

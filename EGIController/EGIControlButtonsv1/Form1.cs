@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
 namespace EGIControlButtonsv1
 {
     public partial class Form1 : Form
@@ -67,15 +68,28 @@ namespace EGIControlButtonsv1
             {
                 RedlightBox.Visible = true;
                 GreenlightBox.Visible = false;
+                penguinBox.Visible = false;
+                spinnerBox.Visible = false;
+                workingOnItLabel.Visible = false;
                 button3.Text = "GO!";
             }
             else if (RedlightBox.Visible == true)
             {
                 RedlightBox.Visible = false;
                 GreenlightBox.Visible = true;
+                penguinBox.Visible = true;
+                spinnerBox.Visible = true;
+                workingOnItLabel.Visible = true;
                 button3.Text = "STOP!";
             }
+
             
+            
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
         }
       
     }
