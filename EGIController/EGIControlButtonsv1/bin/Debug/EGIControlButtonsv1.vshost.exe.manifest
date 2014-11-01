@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EGIControlButtonsv1.exe" size="1571840">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EGIControlButtonsv1.exe" size="1572352">
       <assemblyIdentity name="EGIControlButtonsv1" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>1b4f3br/G8y37Kz3Ett+Z4vAkVY=</dsig:DigestValue>
+        <dsig:DigestValue>OgDaYcGMtHaxNjNO8QUafkjs/60=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

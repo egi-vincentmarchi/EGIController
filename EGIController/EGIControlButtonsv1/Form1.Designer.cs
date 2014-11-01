@@ -75,7 +75,7 @@
             this.eFundDataSet1 = new EGIControlButtonsv1.EFundDataSet();
             this.dataSet1 = new System.Data.DataSet();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.step1RunNow = new System.Windows.Forms.Button();
             this.RedlightBox = new System.Windows.Forms.PictureBox();
             this.GreenlightBox = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -83,6 +83,7 @@
             this.penguinBox = new System.Windows.Forms.PictureBox();
             this.workingOnItLabel = new System.Windows.Forms.Label();
             this.spinnerBox = new System.Windows.Forms.PictureBox();
+            this.profitLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.strategyParametersPerformanceBindingNavigator)).BeginInit();
             this.strategyParametersPerformanceBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.strategyParametersPerformanceBindingSource)).BeginInit();
@@ -396,7 +397,7 @@
             this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(24, 49);
+            this.button1.Location = new System.Drawing.Point(153, 49);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(129, 40);
             this.button1.TabIndex = 3;
@@ -436,18 +437,18 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // step1RunNow
             // 
-            this.button3.BackColor = System.Drawing.Color.Black;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Red;
-            this.button3.Location = new System.Drawing.Point(187, 57);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(123, 24);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Turn Me ON!";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.step1RunNow.BackColor = System.Drawing.Color.Black;
+            this.step1RunNow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.step1RunNow.ForeColor = System.Drawing.Color.Red;
+            this.step1RunNow.Location = new System.Drawing.Point(24, 49);
+            this.step1RunNow.Name = "step1RunNow";
+            this.step1RunNow.Size = new System.Drawing.Size(123, 40);
+            this.step1RunNow.TabIndex = 5;
+            this.step1RunNow.Text = "#1 Export NT to SQL";
+            this.step1RunNow.UseVisualStyleBackColor = false;
+            this.step1RunNow.Click += new System.EventHandler(this.button3_Click);
             // 
             // RedlightBox
             // 
@@ -519,23 +520,42 @@
             this.spinnerBox.TabStop = false;
             this.spinnerBox.Visible = false;
             // 
+            // profitLabel
+            // 
+            this.profitLabel.AccessibleDescription = "PnL Today";
+            this.profitLabel.AccessibleName = "PnL Today";
+            this.profitLabel.AutoSize = true;
+            this.profitLabel.BackColor = System.Drawing.Color.Black;
+            this.profitLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.profitLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.profitLabel.ForeColor = System.Drawing.Color.Lime;
+            this.profitLabel.Location = new System.Drawing.Point(18, 398);
+            this.profitLabel.Name = "profitLabel";
+            this.profitLabel.Size = new System.Drawing.Size(137, 33);
+            this.profitLabel.TabIndex = 14;
+            this.profitLabel.Tag = "PnL Today";
+            this.profitLabel.Text = "$1,430.00";
+            this.profitLabel.Click += new System.EventHandler(this.label2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1093, 438);
+            this.Controls.Add(this.profitLabel);
             this.Controls.Add(this.spinnerBox);
             this.Controls.Add(this.workingOnItLabel);
             this.Controls.Add(this.penguinBox);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.GreenlightBox);
             this.Controls.Add(this.RedlightBox);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.step1RunNow);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.strategyParametersPerformanceDataGridView);
             this.Controls.Add(this.strategyParametersPerformanceBindingNavigator);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "EGI Controller - Ecclesiastes Global Investing LLC";
@@ -600,7 +620,7 @@
         private EFundDataSet eFundDataSet1;
         private System.Data.DataSet dataSet1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button step1RunNow;
         private System.Windows.Forms.PictureBox RedlightBox;
         private System.Windows.Forms.PictureBox GreenlightBox;
         private System.Windows.Forms.Timer timer1;
@@ -608,6 +628,7 @@
         private System.Windows.Forms.PictureBox penguinBox;
         private System.Windows.Forms.Label workingOnItLabel;
         private System.Windows.Forms.PictureBox spinnerBox;
+        private System.Windows.Forms.Label profitLabel;
 
     }
 }

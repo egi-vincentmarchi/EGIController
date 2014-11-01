@@ -71,7 +71,7 @@ namespace EGIControlButtonsv1
                 penguinBox.Visible = false;
                 spinnerBox.Visible = false;
                 workingOnItLabel.Visible = false;
-                button3.Text = "GO!";
+                step1RunNow.Text = "Click to Start!";
             }
             else if (RedlightBox.Visible == true)
             {
@@ -80,7 +80,7 @@ namespace EGIControlButtonsv1
                 penguinBox.Visible = true;
                 spinnerBox.Visible = true;
                 workingOnItLabel.Visible = true;
-                button3.Text = "STOP!";
+                step1RunNow.Text = "Stop Export!";
             }
 
             
@@ -88,6 +88,11 @@ namespace EGIControlButtonsv1
         }
 
         private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
